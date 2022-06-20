@@ -113,6 +113,36 @@ button {
 #sidebar {
     grid-area: 1 / 1 / 7 / 2;
     background-color: var(--bg-color);
+    display: grid;
+    grid-template: 1fr 3fr 1.5fr 3.5fr / 1fr;
+}
+
+#dash {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    font-size: 24px;
+    color: white;
+    font-weight: 900;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 32px;
+}
+
+#dash-svg {
+    height: 50%;
+    flex: 1;
+}
+
+#dash-img {
+    fill: white;
+}
+
+#home {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+#settings {
+    grid-area: 3 / 1 / 4 / 2;
 }
 
 #content {
