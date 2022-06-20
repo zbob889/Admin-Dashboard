@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(5, 1fr);
+}
+
+#header {
+    grid-area: 1 / 2 / 2 / 6;
+    background-color: gray;
+}
+
+#sidebar {
+    grid-area: 1 / 1 / 7 / 2;
+    background-color: blue;
+
+}
+
+#content {
+    grid-area: 2 / 2 / 7 / 6;
+    background-color: red;
+
+}
